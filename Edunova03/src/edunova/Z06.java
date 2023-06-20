@@ -1,21 +1,23 @@
 package edunova;
 
+import javax.swing.JOptionPane;
+
 public class Z06 {
 
 	public static void main(String[] args) {
-		// program unosi broj između 
-				// 1 i 999
-				// U slučaju da je izvan tog raspona
-				// ispisati grešku i prekinuti program
-				// Program ispisuje 1. znamenku upisanog broja
-				
-				// -5 greška
-				// 1067 greška
-				// 456 4
-				// 6 6
-				// 89 8
-		
-		
+		// Program unosi 2 broja
+		// Ako su oba broja parni
+		// ispisuje njihov zbroj
+		// inače ispisuje njihovu razliku
+
+		int a = Integer.parseInt(JOptionPane.showInputDialog("Unesi prvi broj"));
+		int b = Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi broj"));
+		 
+		if(a%2==0) {
+			System.out.println(a+b);
+		}else if (b%2==1)
+			System.out.println(a-b);
+			
 	}
 
 }
