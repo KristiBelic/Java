@@ -89,28 +89,12 @@ public class Z04CiklicnaMatrica {
 		}
 		System.out.println("**********************************");
 
-		for (int i = 1; i<stupci-2; i++) {
-	
+		for (int i = stupci-2; i>0; i--) {
+			matrica[redova-2][i]=b++;
 
-			matrica[redova - 2][3] = 17;
-			matrica[redova - 2][2] = 18;
-			matrica[redova - 2][1] = 19;
-
-		}
-
-		for (int i = 0; i < redova; i++) {
-			for (int j = 0; j < stupci; j++) {
-				System.out.print(matrica[i][j] + "\t");
-			}
-			System.out.println();
-		}
-		System.out.println("**********************************");
-
-		for (int i = 1; i < redova; i++) {
-		
-
-			matrica[redova - 3][1] = 20;
-			matrica[redova - 4][1] = 21;
+//			matrica[redova - 2][3] = 17;
+//			matrica[redova - 2][2] = 18;
+//			matrica[redova - 2][1] = 19;
 
 		}
 
@@ -122,13 +106,29 @@ public class Z04CiklicnaMatrica {
 		}
 		System.out.println("**********************************");
 
-		
-		for(int i=1;i<=redova-4;i++) {
+		for (int i = redova-3; i >0; i--) {
+			matrica[i][1]=b++;
 
+//			matrica[redova - 3][1] = 20;
+//			matrica[redova - 4][1] = 21;
+
+		}
+
+		for (int i = 0; i < redova; i++) {
+			for (int j = 0; j < stupci; j++) {
+				System.out.print(matrica[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		System.out.println("**********************************");
+
+		
+		for(int i=2;i<stupci-1;i++) {
+			matrica[1][i]=b++;
 			
 			
-			matrica[i][stupci-3]=22;
-			matrica[i][stupci-2]=23;
+//			matrica[i][stupci-3]=22;
+//			matrica[i][stupci-2]=23;
 		}
 		
 		
@@ -141,10 +141,11 @@ public class Z04CiklicnaMatrica {
 		System.out.println("**********************************");
 		
 		
-		for(int i =1;i<stupci;i++) {
+		for(int i =stupci-2;i>1;i--) {
+			matrica[2][i]=b++;
 			
-			matrica [redova-3][3]=24;
-			matrica [redova-3][2]=25;
+//			matrica [redova-3][3]=24;
+//			matrica [redova-3][2]=25;
 		}
 		for (int i = 0; i < redova; i++) {
 			for (int j = 0; j < stupci; j++) {
